@@ -17,3 +17,8 @@ You do
 
 Exit Question: 
 - What do you want the next workshop to be about? 
+
+- Presentation options 
+    - Microsoft Polyglot Notebooks 
+    - Reveal.js 
+    - Markdown content generator (ex: jekyll)
