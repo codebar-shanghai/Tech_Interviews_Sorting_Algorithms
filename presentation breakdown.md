@@ -28,7 +28,7 @@ needs:
     talking points: even though coding is a new field of study being only X years old since the first computer was made, pedegogy is not. How old is pedegogy.... here are practices combining good learning habits to study for your next coding interview using sorting algorithms. 
 
 9. pair coding (info graphic) What it is and how (May need 2 slides: what and how with 2 different infographic)
-10. Do's and Don't's of studying with AI infographic chart with 4 squares. green square are what employers are looking for and red are not. What employers are looking for from smart applicants (David interview)
+10. Do's and Don't's of studying with AI infographic chart with 4 squares. green square are what employers are looking for and red are not. What employers are looking for from smart applicants (David interview). Time break down (30:30 - try a coding algorithm 30 minutes. Then spend 30 minutes coding and commenting solution line by line. Try to code the whole page from memory) - incoporate (5:5) for pair coding experience 
 11. Top Down Programming info graphic 
 12. CCI approach to coding interviews 
 13. 1 - 2 more interview books? 
@@ -36,7 +36,7 @@ needs:
 
 15. Neruo logical how to learn faster (how) - do not say this is for the neuro divergents in the room, even though it is 
 
-16. 
+16. specifically what to prepare (Ishe email) and how to incoporate job and interview prep into your daily routine. Note this is my opinion  
 
 17. I do workshop task 
     - now is the fun part where we get to work as a team to pair code. Please take a minute to say hi to the person/ people next to you, because these are the people you'll be pair coding with 
@@ -57,4 +57,3 @@ needs:
 23. thank you to contributers 
 
 24. Thank you's and good byes 
-
