@@ -41,7 +41,7 @@ needs:
 
 16. specifically what to prepare (Ishe email) and how to incoporate job and interview prep into your daily routine. Note this is my opinion  
 
-17. I do workshop task 
+17. I do workshop task {code 1 simple example of a sorting algorithm based on sudo code, then calculate time/ space complexity}
     - now is the fun part where we get to work as a team to pair code. Please take a minute to say hi to the person/ people next to you, because these are the people you'll be pair coding with 
     - introduce assignments and how they are based on skill level. Base level is best if everyone in the group is a beginner. Move up as you team might have more experience <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>
     - explain how to pair code using infographic 
