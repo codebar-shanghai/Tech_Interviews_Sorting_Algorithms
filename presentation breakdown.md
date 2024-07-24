@@ -47,11 +47,11 @@ needs:
     - explain how to pair code using infographic 
     - model how to pair code with someone in the room 
 
-18. We do (Give everyone 3 - 5 minutes to get aquainted with the assignments they choose and get started pair coding 
+18. We do (Give everyone 3 - 5 minutes to get aquainted with the assignments they choose and get started pair coding {code 1 simple example of a sorting algorithm based on sudo code, then calculate time/ space complexity}
 
 19. reminde with inforgraphic after 5 minutes how to pair code 
 
-20. You do. (pretty slide, and music if wanted) Set them loose on the you do. Walk rooom. Tech for understanding and application of practices. Answer questions
+20. You do. (pretty slide, and music if wanted) Set them loose on the you do. Walk rooom. Tech for understanding and application of practices. Answer questions {code 1 simple example of a sorting algorithm based on sudo code, then calculate time/ space complexity}
 
 21. Q&A (get input about questions you have for interviewers and topics ideas for next workshop through an interactive word wall)
 
