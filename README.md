@@ -23,12 +23,13 @@ If time allows, workshop goes fast:
 To do's 
 - organize and add interviews to presentation 
 - finish talking point notes
+- make presentation cards with talking points
 - finish presentation slides 
+    - add style and structure (html/css/reveal.js framework)
 - build demo (bubble)
 - build merge 
 - build RSA 
-- practice presenting workshop a few times 
-- make presentation cards with talking points 
+- practice presenting workshop a few times  
 
 Contributors (get github/contribution name for each): 
 - Meg 
