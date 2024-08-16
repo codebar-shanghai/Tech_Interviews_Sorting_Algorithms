@@ -1,19 +1,24 @@
 # Tech_Interviews_Sorting_Algorithms
 
-Abstract Overview 
-
-- time complexity 
-- space complexity 
+Abstract Overview  
 
 Sorting Algorithm 
 - Bubble Sort 
+    - time complexity 
+    - space complexity
+    - code the algorithm 
+
 - Quick Sort 
+    - time complexity 
+    - space complexity
+    - code the algorithm 
+
 - Merge Sort 
+    - time complexity 
+    - space complexity
+    - code the algorithm 
 
-If time Allows, workshop goes fast: 
-
-- Pass by Reference vs. Pass by Value 
-- Abstract data types vs Concrete? maybe touch on this for a second: What is abstract and what is concrete
+If time allows, workshop goes fast: 
 
 To do's 
 - organize and add interviews to presentation 
