@@ -28,6 +28,7 @@ To do's
 - build merge 
 - build RSA 
 - practice presenting workshop a few times 
+- make presentation cards with talking points 
 
 Contributors (get github/contribution name for each): 
 - Meg 
