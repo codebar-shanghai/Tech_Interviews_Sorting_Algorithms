@@ -1,275 +1,289 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tech Interviews with Sorting Algorithms</title>
 
-		<title>Tech Interviews with Sorting Algorithms</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .reveal .slides {
+            font-size: 24px;
+            line-height: 1.3;
+        }
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				
-				 <!-- 1. Welcome to Tech Interviews with Sorting Algorithms Workshop 
-				    My name is Lauren. 
-				    I'm an applied computer science student at the University of Colorado - Boulder in the USA.   -->
-				<section>
-					<img src="./images/codebar-logo.svg"/>
-					<h1>Tech Interviews with Sorting Algorithms Workshop <h1>
-						<p>Lauren Collins</p>
-						<p>September 2024</p>
-				</section>
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #ffffff;
+        }
 
-				<!-- 2. Ice Breaker  -->
-				<section>
-					<h1>Ice Breaker</h1>
-					<p>1. What is your name? 
-					<br>
-					<p>a. What is your favorite food in Shanghai?</p>
-					<p>OR</p>
-					<p>b. What is an open source project you are currently following?</p>
-				</section>
-				
-				<!-- 3. Overview  -->
-				<section>
-					<ul style="list-style-type: none">
-						<li>Introduction & Ice Breaker (30 min)</li>
-						<li>Tech Interviews Presentation (30 min)</li>
-						<li>Q&A (15 min)</li>
-						<li>Intro to Workshop (15 min)</li>
-						<li>Break (10 min)</li>
-						<li>Workshop (85 min)</li>
-						<li>Closing Remarks (5 min)</li>
-					</ul>
-				</section>
+        .reveal p, .reveal ul, .reveal li {
+            font-size: 1.2em;
+            color: #dcdcdc;
+        }
 
-				<!-- 4. Take Aways  -->
-				<section>
-					<h1>Take Aways</h1>
-					<ul>
-						<li>Learn how to prepare for tech interviews at the junior, mid-level and senior levels</li>
-						<li>Gain experience with Bubble, Merge or RSA algorithms during the workshop</li>
-						<li>Slides are avaliable at: https://codebar-sh.github.io/Tech_Interviews_Sorting_Algorithms/</li>
-				</section>
+        .reveal ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
 
-				<!-- 5. Why 
-				 The Problem with Interviews is you never know what to expect.  
-				 I hope to demistify the tech interview process for you today. -->
-				<section>
-					<h1>The Problem with Interviews</h1>
-				</section>
+        .reveal img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .slide-title {
+            text-align: left;
+            margin-bottom: 20px;
+        }
 
-				<!-- 6. Expectations based on level 
-				   I interviewed X hiring managers to know what they are looking for in a candidate.
-				 	 This is what they had to say: 
-						- All skill levels: 
- 						- It's important to work in pubic so employers can see your work. 
-						- Junior level: soft skills are important
-				 		- Mid level:
-						- Senior level: preparedness is key. you might know some people who got your 
-				 						foot in the door, but there will be people you need to persued to your abilities,
-				 						so come ready to impress with topic to discuss/prepared. 
-				 						Working in public is how you can get your foot in the door even at senior levels
-   										levels too (present at comferences, write articles, etc.) -->
-				
-				<!-- - Game: how are you with people, how would you approach collaboration with coworkers and advocating for the things think should happen at work? How well do you understand "work" itself?
-				- Growth: do you tend to get promoted at the companies you work at, or otherwise can you show increasing responsibility over time.					   
-				- Curiosity: There are a lot of ways to show this, but it's incredibly useful as a developer to be curious about things.					   
-				- Humility: How do you talk about your accomplishments, and your coworkers. -->
-				<section>
-					
-					<h1>Interview 1</h1>						
-					<ul>
-						<li>Alignment</li>
-						<li>Tech Interview is NOT About Tech<li>
-						<li>"Grit, game, & growth" -Chris Aquino</li>
-					</ul>
+        .credits {
+            font-size: 0.8em;
+            text-align: left;
+        }
 
-				</section>
+        .reveal section {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Slide 1: Welcome -->
+            <section>
+                <img src="./images/codebar-logo.svg" alt="Codebar Logo" style="max-height: 150px;">
+                <h1>Tech Interviews with Sorting Algorithms Workshop</h1>
+                <h2>Lauren Collins</h2>
+                <p>September 2024</p>
+            </section>
 
-				<section>
-					
-					<h1>Interview 2: Eddie</h1>						
-					<ul>
-						<li>Use Standard Language Features (Ex: Python Doc Strings)</li>
-						<li>Idiomatic Programming<li>
-						<li>Proper Use of AI</li>
-					</ul>
+            <!-- Slide 2: Ice Breaker -->
+            <section>
+                <h1 class="slide-title">Ice Breaker</h1>
+                <p>1. What is your name?</p>
+                <p>2. What is your favorite food in Shanghai?</p>
+                <p>OR</p>
+                <p>3. What is an open-source project you are currently following?</p>
+            </section>
+            
+            <!-- Slide 3: Overview -->
+            <section>
+                <h1 class="slide-title">Overview</h1>
+                <ul>
+                    <li>Introduction & Ice Breaker (30 min)</li>
+                    <li>Tech Interviews Presentation (30 min)</li>
+                    <li>Q&A (15 min)</li>
+                    <li>Intro to Workshop (15 min)</li>
+                    <li>Break (10 min)</li>
+                    <li>Workshop (85 min)</li>
+                    <li>Closing Remarks (5 min)</li>
+                </ul>
+            </section>
 
-				</section>
+            <!-- Slide 4: Takeaways -->
+            <section>
+                <h1 class="slide-title">Takeaways</h1>
+                <ul>
+                    <li>Learn how to prepare for tech interviews at various levels</li>
+                    <li>Gain experience with Bubble, Merge, or RSA algorithms during the workshop</li>
+                    <li>Slides available at: <a href="https://codebar-sh.github.io/Tech_Interviews_Sorting_Algorithms/" target="_blank">codebar-sh.github.io/Tech_Interviews_Sorting_Algorithms/</a></li>
+                </ul>
+            </section>
 
-				<!-- Anonymous -->
-				<section>
-					
-					<h1>Interviewer 3:</h1>						
-					<p>What are you looking for in a candidate?</p>
-					<ul>
-						<li>Deep Understanding work</li>
-						<li>Analysis and Problem Solving Skills<li>
-						<li>Self Learning & can work independently</li>
-						<li>Advanced Topics: Real-time programming, concurrency, ect.</li>
-					</ul>
-				</section>
+            <!-- Slide 5: The Problem with Interviews -->
+            <section>
+                <h1 class="slide-title">The Problem with Interviews</h1>
+                <p>Interviews can be unpredictable. This workshop aims to demystify the tech interview process.</p>
+            </section>
 
-				<!-- Nath -->
-				<section>
-					
-					<h1>Interviewer 4:</h1>						
-					<ul>
-						<li>Computer Science Fundamentals</li>
-						<li>Adaptability<li>
-						<li>Problem Solving Skills</li>
-					</ul>
+            <!-- Slide 6: Expectations Based on Level -->
+            <section>
+                <h1 class="slide-title">Expectations Based on Level</h1>
+                <p>I interviewed several hiring managers to understand what they look for in candidates:</p>
+                <ul>
+                    <li>All Levels: Showcase your work publicly; employers value this.</li>
+                    <li>Junior Level: Soft skills are crucial.</li>
+                    <li>Mid Level: Demonstrate your technical growth and adaptability.</li>
+                    <li>Senior Level: Preparedness and deep knowledge are key. Present at conferences, write articles, and align with current practices.</li>
+                </ul>
+            </section>
 
-				</section>
-				
-				<!-- David -->
-				<section>
-					
-					<h1>Interviewer 5:</h1>	
-					<ul>
-						<li>Communication</li>
-						<li>Failed and Succeeded<li>
-						<li>Self Learner</li>
-						<li>Align to Current Coding Practices</li>
-						<li>Basic Question: Describe 2 Language Features</li>
-						<li>Depth of Understanding</li>
-						<li>"Deliver Something to Show Understanding": Learn in Public</li>
-						<li>No Degree Required</li>
-					</ul>		
+            <!-- Interview Insights Slides -->
+            <section>
+                <h1 class="slide-title">Interview Insights</h1>
+                <h2>Chris Aquino</h2>
+                <ul>
+                    <li>Alignment is crucial.</li>
+                    <li>Tech interviews are more about problem-solving and communication than just technical knowledge.</li>
+                    <li>"Grit, Game, & Growth"</li>
+                </ul>
+            </section>
 
-				</section>
+            <section>
+                <h1 class="slide-title">Interview Insights</h1>
+                <h2>Eddie</h2>
+                <ul>
+                    <li>Use standard language features (e.g., Python docstrings).</li>
+                    <li>Follow idiomatic programming practices.</li>
+                    <li>Use AI responsibly and effectively.</li>
+                </ul>
+            </section>
 
-				<section>
-					
-					<h1>Where is the Best Place to Find a Job:</h1>						
-					<ul>
-						<li>Coding Communities</li>
-						<li>User Groups/ Tech User Groups<li>
-						<li>Agile User Groups</li>
-						<li>Conferences</li>
-						<li>Open Source</li>
-					</ul>
+            <section>
+                <h1 class="slide-title">Interview Insights</h1>
+                <h2>Anonymous</h2>
+                <ul>
+                    <li>Deep understanding of work processes.</li>
+                    <li>Strong analysis and problem-solving skills.</li>
+                    <li>Self-learning and the ability to work independently.</li>
+                    <li>Knowledge of advanced topics like real-time programming and concurrency.</li>
+                </ul>
+            </section>
 
-				</section>
+            <section>
+                <h1 class="slide-title">Interview Insights</h1>
+                <h2>Nath</h2>
+                <ul>
+                    <li>Strong computer science fundamentals.</li>
+                    <li>Adaptability.</li>
+                    <li>Problem-solving skills.</li>
+                </ul>
+            </section>
 
-<!-- The rest of the presentation should work on the skills listed with infographics and identifying and analysing work flows -->
+            <section>
+                <h1 class="slide-title">Interview Insights</h1>
+                <h2>David</h2>
+                <ul>
+                    <li>Strong communication skills.</li>
+                    <li>Experience with both success and failure.</li>
+                    <li>Commitment to self-learning.</li>
+                    <li>Alignment with current coding practices.</li>
+                    <li>Understand key language features deeply.</li>
+                    <li>Deliver projects that showcase your understanding—learn in public.</li>
+                    <li>A degree is not required.</li>
+                </ul>
+            </section>
 
-				 <!-- 7. The job descripton says "computer science knowledge". What does that mean?
-					pick study techniques you remember worked for you in school
-				 	All interviewers said the same thing: a degree is not required.
-				 	In my discussion with academic advisors, I found that the following courses are what employers are looking for: -->
-				<section>
-					<h1>The job descripton says "computer science knowledge". What does that mean?<h1>
-					<p>Do I need a computer science degree?</p>
-					<p>No!</p>
-					<p>What courses/knowledge are employers looking for?</p>
-				</section>
+            <section>
+                <h1 class="slide-title">Best Places to Find a Job</h1>
+                <ul>
+                    <li>Coding communities</li>
+                    <li>User groups (Tech, Agile, etc.)</li>
+                    <li>Conferences</li>
+                    <li>Open source projects</li>
+                </ul>
+            </section>
 
-				 <!-- 8. Pair coding (teaching practice equivalance) -->
-				<section>
-					<h1>Pair Coding</h1>
-					<p>A common interview techniques for junior developers</p>
-				</section>
+            <!-- Slide on CS Knowledge -->
+            <section>
+                <h1 class="slide-title">What Does "Computer Science Knowledge" Mean?</h1>
+                <p>Do I need a computer science degree? <strong>No!</strong></p>
+                <p>However, employers look for certain skills and knowledge, often covered in specific courses or self-study.</p>
+            </section>
 
-				 <!-- 9. How to study using AI (relate to pedegoty they have heard of): 
-				 	  tell AI to quiz me on "topic", give AI the content to study 
-				    and say: "help me study." Don't replace AI for your understanding. 
-				    You should understand the topics and be able to discuss the topics 
-				    at the level of understanding you say you are  you say you know in 
-				    an interview
-				    Employers are not looking for you to plug in a problem into AI. 
-				    To use AI in a professional way, consider using it to quiz you on a topic you 
-				    say you know.  -->
-				<section>
-					<h1>Study Tips</h1>
-				</section>
+            <!-- Slide on Pair Coding -->
+            <section>
+                <h1 class="slide-title">Pair Coding</h1>
+                <p>A common interview technique, especially for junior developers. It assesses collaboration and problem-solving in real-time.</p>
+            </section>
 
-				 <!-- 10. An approach for tackling LeetCode Problems: Top Down programming infographic -->
-				<section>Top Down Programming Infographic
-					<img src=""/>
-				</section>
+            <!-- Slide on AI Study Tips -->
+            <section>
+                <h1 class="slide-title">Study Tips Using AI</h1>
+                <ul>
+                    <li>Use AI to quiz yourself on topics.</li>
+                    <li>Create a study plan with AI (e.g., "Learn Python in 5 hours").</li>
+                    <li>Understand the topics deeply to discuss them confidently in an interview.</li>
+                </ul>
+            </section>
 
-				 <!-- 11. CCI approach to tech interview infographic -->
-				<section>
-					<h1>CCI Approach to Tech Interviews</h1>
-					<img src=""/>
-				</section>
-				
-				 <!-- 12. Neurological based strategies -->
-				<section>
-					<h1>Neurological Based Strategies</h1>
+            <!-- Slide on Learning New Technologies -->
+            <section>
+                <h1 class="slide-title">How to Learn New Technologies Quickly</h1>
+                <ul>
+                    <li>Start with the "Hello World" tutorial.</li>
+                    <li>Find a book (free resources are great).</li>
+                    <li>Apply the Pareto Principle—focus on the 20% of topics that give you 80% of the results.</li>
+                </ul>
+            </section>
 
-				</section>
+            <!-- Infographics -->
+            <section>
+                <h1 class="slide-title">Top-Down Programming</h1>
+                <img src="path_to_infographic" alt="Top-Down Programming Infographic">
+            </section>
 
-				 <!-- 13. Q&A (15 min) -->
-				<section>
-					<h1>Q&A<h1>
-				</section>
+            <section>
+                <h1 class="slide-title">CCI Approach to Tech Interviews</h1>
+                <img src="path_to_infographic" alt="CCI Approach Infographic">
+            </section>
 
-				 <!-- 14. Intro to Workshop  (15 min) -->
-				  <!-- I am going to introduce RSA activity and then we will demo Bubble Sort activity.
-				  This will take no more than 15 minutes
-				  we will then take a 10 minutes break. 
-				  When we come back you will have to rest of the time to break into groups and work on the activity of your choice. -->
-				<section>
-					<h1>Intro to Workshop</h1>
-					<p>Introduce RSA</p> <!-- (5 minutes) -->
-					<p>Demo Bubble </p> <!-- (10 minutes) -->
-					<br>
-				</section>
+            <!-- Neurological Strategies -->
+            <section>
+                <h1 class="slide-title">Neurological-Based Strategies</h1>
+                <p>Understanding how the brain works can help you optimize your study and interview preparation techniques.</p>
+            </section>
 
-				 <!-- 15. Break (10 min) -->
-				<section>
-					<h1>Break (10 min)</h1>
-				</section>
+            <!-- Q&A Slide -->
+            <section>
+                <h1 class="slide-title">Q&A</h1>
+                <p>Feel free to ask any questions!</p>
+            </section>
 
-				 <!-- 16. Workshop (85 min) -->
-				<section>
-					<h1>Workshop (85 min)</h1>
-					<p>Use the skills we discussed today to pair code a algorithm of your choice.</p>
-					<p>Choices: Merge Sort, RSA Algorithm</p>
-				</section>
+            <!-- Intro to Workshop -->
+            <section>
+                <h1 class="slide-title">Introduction to the Workshop</h1>
+                <p>In this workshop, we will dive into RSA and Bubble Sort algorithms. After a short break, we'll break into groups to work on the algorithm of your choice.</p>
+            </section>
 
-				<!-- 17. Other Resources (open during workshop) -->
-				<section>
-					<ul>
-						<li>How to identify your technical skill level: https://github.com/Semalab/developer-skills-matrix.git</li>
-					</ul>
-				</section>
+            <!-- Break Slide -->
+            <section>
+                <h1 class="slide-title">Break (10 min)</h1>
+            </section>
 
-				 <!-- 17. Closing Remarks (5 min) -->
-				<section>
-					<h1>Thank you!</h1>
-					<p>Contributors:</p>
-					<ul>
-						<li>Lauren Collins</li>
-					</ul>
-				</section>
-			</div>
-		</div>
+            <!-- Workshop Slide -->
+            <section>
+                <h1 class="slide-title">Workshop (85 min)</h1>
+                <p>Pair code an algorithm of your choice: Merge Sort, RSA Algorithm.</p>
+            </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+            <!-- Resources Slide -->
+            <section>
+                <h1 class="slide-title">Other Resources</h1>
+                <ul>
+                    <li>Identify your technical skill level: <a href="https://github.com/Semalab/developer-skills-matrix.git" target="_blank">https://github.com/Semalab/developer-skills-matrix.git</a></li>
+                </ul>
+            </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+            <!-- Closing Remarks -->
+            <section>
+                <h1 class="slide-title">Thank You!</h1>
+                <p>Contributors:</p>
+                <ul>
+                    <li>Lauren Collins</li>
+                </ul>
+                <p class="credits">Slides created with Reveal.js</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
 </html>
