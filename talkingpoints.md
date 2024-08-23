@@ -58,7 +58,7 @@ Based on the content from both the `index.html` and `index-rough-draft.html` fil
 **Suggested Visuals:**
 - A career ladder graphic or a matrix that maps out skills and expectations by career level.
 
-### Slide 7: Interview Insights - Chris Aquino
+### Slide 7: Interview Insights
 **Talking Points:**
   - Discuss each interviewer’s unique perspective on what they look for in candidates, including technical skills, problem-solving abilities, and communication.
   - Highlight key phrases like "Grit, game, & growth" and "Depth of understanding."
