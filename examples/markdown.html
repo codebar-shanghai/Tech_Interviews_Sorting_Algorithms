@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
 
-	<head>
-		<meta charset="utf-8">
+        <title>reveal.js - Markdown Example</title>
 
-		<title>reveal.js - Markdown Example</title>
+        <link rel="stylesheet" href="../dist/reveal.css" />
+        <link rel="stylesheet" href="../dist/theme/white.css" id="theme" />
 
-		<link rel="stylesheet" href="../dist/reveal.css">
-		<link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    </head>
 
-        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<div class="slides">
-
+    <body>
+        <div class="reveal">
+            <div class="slides">
                 <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
-                <section data-markdown="markdown.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+                <section
+                    data-markdown="markdown.md"
+                    data-separator="^\n\n\n"
+                    data-separator-vertical="^\n\n"
+                ></section>
 
                 <!-- Slides are separated by three dashes (the default) -->
                 <section data-markdown>
@@ -36,7 +36,11 @@
                 </section>
 
                 <!-- Slides are separated by regexp matching newline + three dashes + newline, vertical slides identical but two dashes -->
-                <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
+                <section
+                    data-markdown
+                    data-separator="^\n---\n$"
+                    data-separator-vertical="^\n--\n$"
+                >
                     <script type="text/template">
                         ## Demo 2
                         Slide 1.1
@@ -112,7 +116,7 @@
                                 nflag = 0;
                             if (*p == 'e')
                                 eflag = '\\';
-                        } while (*++p); 
+                        } while (*++p);
                         ```
                         [source](https://git.busybox.net/busybox/tree/coreutils/echo.c?h=1_36_stable#n287)
                     </script>
@@ -127,35 +131,33 @@
 
                 <!-- Math -->
                 <section data-markdown>
-					## The Lorenz Equations
-					`\[\begin{aligned}
-					\dot{x} &amp; = \sigma(y-x) \\
-					\dot{y} &amp; = \rho x - y - xz \\
-					\dot{z} &amp; = -\beta z + xy
-					\end{aligned} \]`
+                    ## The Lorenz Equations `\[\begin{aligned} \dot{x} &amp; =
+                    \sigma(y-x) \\ \dot{y} &amp; = \rho x - y - xz \\ \dot{z}
+                    &amp; = -\beta z + xy \end{aligned} \]`
                 </section>
-
             </div>
-		</div>
+        </div>
 
-		<script src="../dist/reveal.js"></script>
+        <script src="../dist/reveal.js"></script>
         <script src="../plugin/markdown/markdown.js"></script>
         <script src="../plugin/highlight/highlight.js"></script>
         <script src="../plugin/notes/notes.js"></script>
         <script src="../plugin/math/math.js"></script>
 
-		<script>
+        <script>
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
 
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-			});
-
-		</script>
-
-	</body>
+                plugins: [
+                    RevealMarkdown,
+                    RevealHighlight,
+                    RevealNotes,
+                    RevealMath.KaTeX,
+                ],
+            });
+        </script>
+    </body>
 </html>

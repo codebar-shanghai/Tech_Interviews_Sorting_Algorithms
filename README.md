@@ -1,53 +1,58 @@
 # Tech_Interviews_Sorting_Algorithms
 
-Abstract Overview  
+Abstract Overview
 
-Sorting Algorithm 
-- Bubble Sort 
-    - time complexity 
-    - space complexity
-    - code the algorithm 
+Sorting Algorithm
 
-- Quick Sort 
-    - time complexity 
-    - space complexity
-    - code the algorithm 
+-   Bubble Sort
 
-- Merge Sort 
-    - time complexity 
-    - space complexity
-    - code the algorithm 
+    -   time complexity
+    -   space complexity
+    -   code the algorithm
 
-If time allows, workshop goes fast: 
+-   Quick Sort
 
-To do's 
+    -   time complexity
+    -   space complexity
+    -   code the algorithm
 
-- organize and add interviews to presentation 
+-   Merge Sort
+    -   time complexity
+    -   space complexity
+    -   code the algorithm
 
-- finish talking point notes 
+If time allows, workshop goes fast:
 
-- make presentation cards with talking points
+To do's
 
-- finish presentation slides 
-    - add style and structure (html/css/reveal.js framework)
+-   organize and add interviews to presentation
 
-- build demo (bubble)
+-   finish talking point notes
 
-- build merge 
+-   make presentation cards with talking points
 
-- build RSA 
+-   finish presentation slides
 
-- practice presenting workshop a few times  
+    -   add style and structure (html/css/reveal.js framework)
 
-- design and emplement slides 
+-   build demo (bubble)
 
-Contributors (get github/contribution name for each): 
-- Meg 
-- Eddie
-- Yang 
-- Karl
+-   build merge
 
-Sources: 
+-   build RSA
+
+-   practice presenting workshop a few times
+
+-   design and emplement slides
+
+Contributors (get github/contribution name for each):
+
+-   Meg
+-   Eddie
+-   Yang
+-   Karl
+
+Sources:
 Cracking the Coding Interview by Gayle Laakmann McDowell
 zyBooks Data Structures interactive textbook
 https://www.hello-algo.com/en/
