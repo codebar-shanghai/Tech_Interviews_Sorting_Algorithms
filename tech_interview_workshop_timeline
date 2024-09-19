@@ -1,0 +1,15 @@
+digraph {
+	A [label="Introduction (5 min)"]
+	B [label="Tech Interviews Presentation (30 min)"]
+	C [label="Intro to Workshop (40 min)"]
+	D [label="Q&A (15 min)"]
+	E [label="Break (10 min)"]
+	F [label="Workshop with Q&A (75 min)"]
+	G [label="Closing Remarks (5 min)"]
+	A -> B [label=Introduction]
+	B -> C [label="Key Concepts Presentation"]
+	C -> D [label="Workshop Introduction"]
+	D -> E [label="Question Session"]
+	E -> F [label="Hands-on Coding"]
+	F -> G [label="Final Remarks"]
+}
