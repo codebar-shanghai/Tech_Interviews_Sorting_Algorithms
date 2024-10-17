@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <title>Tech Interviews with Sorting Algorithms</title>
+        <title>Tech Interviews with Algorithms</title>
 
         <link rel="stylesheet" href="dist/reset.css" />
         <link rel="stylesheet" href="dist/reveal.css" />
@@ -58,6 +62,26 @@
             .reveal section {
                 padding: 20px;
             }
+
+            textarea {
+                width: 90%;
+                height: 40vh; /* Limit the editor's height to fit the slide */
+                margin-bottom: 10px;
+            }
+
+            #output {
+                width: 90%;
+                height: 15vh; /* Adjust the height of the output */
+                overflow: auto;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                font-size: 1em;
+            }
+
+            #run-code {
+                margin-bottom: 10px;
+            }
         </style>
     </head>
     <body>
@@ -92,9 +116,6 @@
                 <!-- Slide 2: about me -->
                 <section>
                     <h1 class="slide-title">About Me</h1>
-                    <p>
-                        Hi! I'm Lauren Collins, an applied computer science student at the University of Colorado Boulder.
-                    </p>
                     <ul>
                         <li>Aspiring Full Stack Developer</li>
                         <li>Focused on web technologies</li>
@@ -102,7 +123,7 @@
                         <li>Fun fact: My 4-year-old daughter is the youngest CodeBar member!</li>
                     </ul>
                     <aside class="notes">
-                        I'm studying applied computer science online, passionate about full-stack 
+                        I'm passionate about full-stack 
                         development, and committed to empowering women in tech. I'm also preparing 
                         to contribute to open-source projects, and my daughter, at 4, 
                         is the youngest CodeBar member!
@@ -124,7 +145,7 @@
 
                     <aside class="notes">
                         Today’s session will start with a brief intro, followed by a 30-minute presentation on tech interviews. 
-                        Next, we’ll dive into sorting algorithms in the workshop, followed by a Q&A, a short break, and hands-on activities. 
+                        Next, we’ll dive into algorithms in the workshop, followed by a Q&A, a short break, and hands-on activities. 
                         We’ll finish with closing remarks.
                     </aside>
                 </section>
@@ -252,7 +273,7 @@
 
                 <section>
                     <h1 class="slide-title">Interview Insights</h1>
-                    <h2>Prof. Nath</h2>
+                    <h2>Prof. Nath at the Uniceristy of Coloradoo Boulder</h2>
                     <ul>
                         <li>Focus on adaptability over what you've learned.</li>
                         <li>Strong fundamentals and problem-solving are key.</li>
@@ -545,55 +566,15 @@
                         
                     </aside>
                 </section>
-<!-- 
                 <section>
-                    <h1 class="slide-title">History of CCI Approach to Tech Interviews</h1>
-                    <ul>
-                        <li><strong>Inventor:</strong> Gayle Laakmann McDowell</li>
-                        <li><strong>Year:</strong> 2008 (First published in 2008)</li>
-                        <li><strong>Relevance:</strong> The CCI approach emphasizes problem-solving, 
-                            algorithms, and data structures, teaching candidates to think like interviewers 
-                            and solve problems logically.</li>
-
-                    </ul>
+                    <h1 class="slide-title">Pair Coding & Top Down Programming Modeling</h1>
+                    <!-- Include link for prepared coding challenge using Bubble sort -->
+                    
                     <aside class="notes">
-                        The CCI approach, created by Gayle Laakmann McDowell in 2008, 
-                        is a widely used method for technical interview prep. It focuses on 
-                        key skills like problem-solving and algorithms and helps candidates think like interviewers.
+                        In this example, one partner should act as the "driver," writing the code, while the other is the "navigator," guiding them through the algorithm.
+                        Practice good communication and explain the thought process behind each step.
                     </aside>
                 </section>
-                
-                              
-
-                <section>
-                    <h1 class="slide-title">CCI Approach to Tech Interviews</h1>
-                    <ol>
-                        <li>Master Data Structures and Algorithms</li>
-                        <li>Clarify Problems and Plan Approach</li>
-                        <li>Communicate Thought Process</li>
-                        <li>Write Clean, Modular Code</li>
-                        <li>Test Thoroughly</li>
-                        <li>Prepare for Behavioral Questions</li>
-                        <li>Practice with Mock Interviews</li>
-                    </ol>
-                    <aside class="notes">
-                        The CCI approach is a structured way to excel in tech interviews, 
-                        focusing on mastering fundamentals, clear communication, 
-                        and practicing problem-solving. Be sure to prepare for both coding and behavioral questions.
-                    </aside>
-                </section>
-
-                <section>
-                    <h1 class="slide-title">CCI Approach to Tech Interviews: 3 minute video</h1>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JPMsNSDNows?start=523&end=844" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <aside class="notes">
-                        The video introduces key aspects of the CCI approach, 
-                        focusing on problem-solving strategies, mastering data structures, 
-                        and preparation for coding and behavioral questions.
-                    </aside>
-                </section>                
-                 -->
 
                 <section>
                     <h1 class="slide-title">Q&A</h1>
@@ -685,8 +666,46 @@
             Reveal.initialize({
                 hash: true,
                 plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-                slideNumber: true,  // Enables slide numbers at the bottom
-                slideNumber: 'c/t', // Optional: Shows the current slide number and total slides (c = current, t = total)
+                slideNumber: true,
+                slideNumber: 'c/t',
+            });
+
+            var codeMirrorInitialized = false;
+            var editor;
+
+            // Function to initialize CodeMirror only once
+            function initializeCodeMirror() {
+                if (!codeMirrorInitialized) {
+                    editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+                        lineNumbers: true,
+                        mode: 'javascript',
+                        theme: 'default',
+                    });
+                    codeMirrorInitialized = true;
+                }
+            }
+
+            // Function to run the code and display the output
+            function runCode() {
+                var code = editor.getValue();
+                try {
+                    var output = eval(code);
+                    document.getElementById('output').textContent = JSON.stringify(output, null, 2);
+                } catch (err) {
+                    document.getElementById('output').textContent = 'Error: ' + err.message;
+                }
+            }
+
+            // Attach event listener to the run button after Reveal.js has initialized
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('run-code').addEventListener('click', runCode);
+            });
+
+            // Initialize CodeMirror when the slide changes and it's visible
+            Reveal.on('slidechanged', function (event) {
+                if (event.currentSlide.querySelector('#code')) {
+                    initializeCodeMirror();
+                }
             });
         </script>
     </body>
