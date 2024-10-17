@@ -21,6 +21,10 @@ This workshop aims to equip you with the knowledge and skills necessary to succe
 - **Presentation:** The slides for the presentation are hosted online, using **Reveal.js** for an interactive experience. You can follow the presentation at the link below:
   - [Tech Interviews with Sorting Algorithms Presentation](https://codebar-shanghai.github.io/Tech_Interviews_Sorting_Algorithms/)
 
+
+* **Participate in Activities:** Complete the activities and exercises hosted in this repository: 
+  - [Activity Repository](https://github.com/codebar-shanghai/Tech_Interviews_Sorting_Algorithms_activities.git) 
+
 ## Technologies Used
 - **Reveal.js:** A framework for creating interactive presentations.
 - **Prettier:** Code formatter to maintain consistent code style across the project.
@@ -33,13 +37,6 @@ This workshop aims to equip you with the knowledge and skills necessary to succe
 3. **Interview Preparation:** Insights from industry experts on how to approach interviews based on your experience level (Junior, Mid-Level, Senior).
 4. **Workshop:** Hands-on coding practice with sorting algorithms, focusing on pair programming and clear communication.
 5. **Best Practices:** Tips on using AI to enhance learning, active recall techniques, and learning in public.
-
-## Workshop Flow
-- **Part 1: Presentation (30 min)**  
-  Learn about tech interviews, sorting algorithms, and coding practices.
-  
-- **Part 2: Hands-on Workshop with Q&A (85 min)**  
-  In pairs, choose and implement an algorithm from the presentation. Focus on collaboration, communication, and code clarity.
 
 ## How to Run the Presentation Locally
 
@@ -68,5 +65,6 @@ This workshop aims to equip you with the knowledge and skills necessary to succe
 - **Lauren Collins**  
   [Personal Website](https://laurencollins.dev)
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Tools 
+- [Timer](https://cuckoo.team/)
+
