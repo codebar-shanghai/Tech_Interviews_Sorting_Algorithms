@@ -54,6 +54,25 @@ This workshop aims to equip you with the knowledge and skills necessary to succe
     $python -m http.server
     press "s" to see talking points
 
+## Enable Printing with Speaker Notes
+
+1. Open your Reveal.js presentation in the browser.
+
+2. Append the following to the URL:
+    $?print-pdf&showNotes=true
+
+or use the following line to not include notes: 
+
+    $?print-pdf
+
+3. Use your brouser options to print 
+  
+
+bash
+Copy code
+http://localhost:8000/index.html?print-pdf&showNotes=true
+Press Enter to reload the page with the print view and speaker notes visible.
+
 4. Alternatively, you can deploy this project to **GitHub Pages** or use GitHub CodeSpace to view presentation. 
 
 ## Action Items

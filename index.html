@@ -6,6 +6,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
         <link rel="icon" href="./images/favicon.ico" />
         <meta name="description" content="Tech Interviews with Sorting Algorithms Workshop" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
         <meta charset="utf-8" />
         <meta
@@ -82,6 +83,30 @@
                 color: white;
                 background-color: black;
             }
+            .images-container {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .about-me-image {
+                        width: 150px;
+                        height: auto; /* Keeps aspect ratio intact */
+                        object-fit: cover; /* Ensures proper cropping if needed */
+                        border-radius: 8px;
+                        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .icon-container {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 15px;
+                    }
+
+                    .fa-solid {
+                        color: #4CAF50; /* Green color to represent growth and expectations */
+                    }
         </style>
     </head>
     <body>
@@ -131,17 +156,24 @@
                         <li>Aspiring Full Stack Developer</li>
                         <li>Focused on web technologies</li>
                         <li>Passionate about empowering women in tech</li>
+                        <li>B.S. Degree in Teaching and Learning</li>
+                        <li>Work Experience in Middle School Education (Age 11 - 13)</li>
                         <li>Fun fact: My 4-year-old daughter is the youngest CodeBar member!</li>
                     </ul>
+                
+                    <!-- Adding the three images below -->
+                    <div class="images-container">
+                        <img src="./images/IMG_5227.jpeg" alt="Personal Photo 1" class="about-me-image">
+                        <img src="./images/IMG_5241.jpeg" alt="Personal Photo 2" class="about-me-image">
+                        <img src="./images/IMG_5304.jpeg" alt="Personal Photo 3" class="about-me-image">
+                    </div>
+                
                     <aside class="notes">
-                        I'm passionate about full-stack 
-                        development, and committed to empowering women in tech. I'm also preparing 
-                        to contribute to open-source projects, and my daughter, at 4, 
-                        is the youngest CodeBar member!
+                        I'm passionate about full-stack development, and committed to empowering women in tech. 
+                        I'm also preparing to contribute to open-source projects, and my daughter, at 4, is the youngest CodeBar member!
                     </aside>
                 </section>
                 
-
                 <section>
                     <h1 class="slide-title">Overview</h1>
                     <ul>
@@ -188,58 +220,43 @@
                 </section>
 
                 <!-- Slide 5: The Problem with Interviews -->
-                <section>
-                    <h1 class="slide-title">The Problem with Interviews</h1>
-                    <p>
-                        Interviews can be unpredictable. This workshop aims to
-                        demystify the tech interview process.
-                    </p>
-                    <aside class="notes">
-                        Interviews can feel unpredictable,
-                         but this workshop will clarify the tech interview process. 
-                         You'll learn what interviewers are looking for and how to prepare confidently. 
-                         To prepare for this presentation I interviewed hiring managers, 
-                         today I will share their insights on what they value in candidates.
-                    </aside>
-                </section>
+            <section>
+                <h1 class="slide-title">The Problem with Interviews</h1>
+                <p>
+                    Interviews can be unpredictable. This workshop aims to demystify the tech interview process.
+                </p>
+
+                <!-- Icon Container -->
+                <div class="icon-container">
+                    <i class="fas fa-question-circle fa-5x"></i> <!-- Question mark icon -->
+                </div>
+
+                <aside class="notes">
+                    Interviews can feel unpredictable, but this workshop will clarify the tech interview process. 
+                    You'll learn what interviewers are looking for and how to prepare confidently. 
+                    To prepare for this presentation, I interviewed hiring managers. Today, I will share their insights on what they value in candidates.
+                </aside>
+            </section>
+
 
                 <!-- Slide 6: Expectations Based on Level -->
                 <section>
-                    <h1 class="slide-title">Expectations Based on Level</h1>
+                    <h1>Expectations Based on Level </h1> 
                     <p>I interviewed hiring managers about what they look for in candidates:</p>
                     <ul>
-                        <li>All Levels: Publicly showcase your work.</li>
-                        <li>Junior: Highlight soft skills.</li>
-                        <li>Mid-Level: Demonstrate growth and adaptability.</li>
-                        <li>Senior: Show deep knowledge and thought leadership.</li>                        
+                        <li><strong>All Levels:</strong> Publicly showcase your work.</li>
+                        <li><strong>Junior:</strong> Highlight soft skills.</li>
+                        <li><strong>Mid-Level:</strong> Demonstrate growth and adaptability.</li>
+                        <li><strong>Senior:</strong> Show deep knowledge and thought leadership.</li>
                     </ul>
+                
                     <aside class="notes">
-                        Public portfolios are important at all levels. 
-                        Juniors should highlight soft skills, mid-levels should show technical growth, 
-                        and seniors need to demonstrate deep knowledge and leadership through activities 
-                        like writing or speaking at conferences.
+                        I interviewed hiring managers about the key traits they value at each career level. 
+                        Across all levels, they expect candidates to showcase their work publicly. 
+                        For junior roles, soft skills are critical. Mid-level candidates should demonstrate adaptability 
+                        and growth, while senior professionals are expected to exhibit deep knowledge and thought leadership.
                     </aside>
                 </section>
-                
-
-                <!-- Interview Insights Slides
-                <section>
-                    <h1 class="slide-title">Interview Insights</h1>
-                    <h2>M. Noonan</h2>
-                    <ul>
-                        <li>Alignment is crucial in the initial interview.</li>
-                        <li>Prioritize problem-solving and communication over speed.</li>
-                        <li>"Grit, Game, & Growth" matter: perseverance, collaboration, and development.</li>
-                        <li>Curiosity and humility are highly valued.</li>
-                        <li>Avoid candidates who lack kindness or teamwork.</li>
-                    </ul>
-                    
-                    <aside class="notes">
-                        Mark Noonan stresses alignment, problem-solving, and communication in interviews.
-                         He values perseverance, collaboration, curiosity, and humility, 
-                         while avoiding candidates who lack kindness or teamwork.
-                    </aside>
-                </section> -->
                 
                 <section>
                     <h1 class="slide-title">Interview Insights</h1>
@@ -248,7 +265,7 @@
                         <li>Use standard language libraries in interviews.</li>
                         <li>Start with a docstring to define inputs and outputs before coding.</li>
                         <li>Follow a "top-down" programming approach.</li>
-                        <li>Practice idiomatic programming (e.g., dictionary and list comprehensions).</li>
+                        <li>Develop fluency in idiomatic programming (e.g., by following Python’s design principles and style; refer to bubble sort and merge sort exercises).</li>
                         <li>Solve problems first, then use AI to refine and learn.</li>
                     </ul>
                     <aside class="notes">
@@ -311,23 +328,6 @@
                         Lastly, he noted that a degree isn't necessary—practical skills and a strong portfolio often matter more.
                     </aside>
                     
-                </section>
-                <section>
-                    <h1 class="slide-title">Action Item</h1>
-                    <ul>
-                        <li>
-                            Document your learning journey by creating blog posts or GitHub repositories to solidify your knowledge and share it with others.
-                        </li>
-                        <li>
-                            Share your posts on social media and developer communities like CodeBar to engage with others, get feedback, and generate new ideas.
-                        </li>
-                    </ul>
-                    <aside class="notes">
-                        After the presentation, take time to document what you're learning. 
-                        Use blogs or GitHub to showcase your progress, and don't forget to share on platforms 
-                        like CodeBar to connect with others. Engaging with the community can help you gain 
-                        feedback and fresh insights.
-                    </aside>
                 </section>
                 
                 <section>
@@ -402,27 +402,11 @@
                         </p>
                     </aside>
                 </section>
-
-                <section>
-                    <h1 class="slide-title">History of Pair Coding and Interviews</h1>
-                    <ul>
-                        <li><strong>Invented by:</strong> Kent Beck and Ward Cunningham</li>
-                        <li><strong>Year:</strong> 1999 (as part of Extreme Programming)</li>
-                        <li><strong>Relevance:</strong> Used in interviews to assess collaboration, communication, 
-                            and problem-solving in a team setting.</li>
-                    </ul>
-                    <aside class="notes">
-                        Pair coding, introduced by Kent Beck and Ward Cunningham in 1999, 
-                        is used in interviews to evaluate collaboration, communication, and real-time problem-solving. 
-                        It’s not just about coding skills, but how well candidates explain their thought 
-                        process and work with feedback.
-                    </aside>
-                </section>
                 
  
-                <!-- Slide on Pair Coding -->
+                <!-- Slide on Pair Programming -->
                 <section>
-                    <h1 class="slide-title">Pair Coding</h1>
+                    <h1 class="slide-title">Pair Programming</h1>
                     
                     <ul>
                         <li>Driver: Writes the code</li>
@@ -436,11 +420,25 @@
                         developers. It assesses collaboration and
                         problem-solving in real-time.
                     </p>
-                    <aside class="notes"></aside>
+                    <p>
+                        You are encouraged to pair code during the workshop while completing the activities today. 
+                    </p>
+                    <aside class="notes">
+                        Pair programming is used in interviews to assess both technical and teamwork skills. 
+                    
+                        - **Driver:** Writes the code.  
+                        - **Navigator:** Guides the driver and reviews the code.  
+                        - **Switch roles every 20-30 minutes** to keep both engaged.  
+                    
+                        **Explain your thought process** as you work to stay aligned.  
+                        **Use feedback** to improve your approach.  
+                    
+                        Try pairing during the workshop to build collaboration skills and reinforce what you’ve learned.
+                    </aside>
                 </section>
 
                 <section>
-                    <h1 class="slide-title">Pair Coding</h1>
+                    <h1 class="slide-title">Pair Programming</h1>
                     
                     <ul>
                         <li>Driver: Writes the code</li>
@@ -479,6 +477,16 @@
                             to write and rewrite code from memory generated by
                             AI.
                         </li>
+                        <li>
+                            Ask AI: "What do I need to memorize, and what do I need to know well about X, Y, Z?" 
+                            to help you study effectively.
+                        </li>
+                        <li>
+                            Tell AI to organize the information into a table or create Cornell notes for you to study from.
+                        </li>
+                        <li>
+                            Then ask AI: "Quiz me on X, Y, Z."
+                        </li> 
                     </ul>
                     <aside class="notes">
                         It's crucial to truly understand code, 
@@ -490,52 +498,17 @@
                     </aside>
                 </section>
 
-<!-- 
-                Slide on Learning New Technologies -->
-                <!-- <section>
-                    <h1 class="slide-title">
-                        How to Learn New Technologies Quickly
-                    </h1>
-                    <ul>
-                        <li>Start with the "Hello World" tutorial.</li>
-                        <li>Find a book (free resources are great).</li>
-                        <li>
-                            Apply the Pareto Principle—focus on the 20% of
-                            topics that give you 80% of the results.
-                        </li>
-                    </ul>
-                    <aside class="notes">
-                        <p>
-                            When learning a new technology, it's important to
-                            start with something simple like a "Hello World"
-                            tutorial, which provides a quick win and a basic
-                            understanding of the setup. Next, finding a
-                            comprehensive resource, such as a book or a
-                            well-structured online course, can help build a
-                            solid foundation. Free resources are particularly
-                            valuable and often sufficient. Finally, applying the
-                            Pareto Principle can accelerate learning—focus on
-                            mastering the essential 20% of the technology that
-                            will deliver 80% of the benefits. This approach
-                            allows for quicker application and understanding,
-                            making you more productive with the new technology
-                            in a shorter amount of time.
-                        </p>
-                    </aside>
-                </section> -->
-
-                <!-- Infographics -->
                 <section>
                     <h1 class="slide-title">History of Top-Down Programming and Interviews</h1>
                     <ul>
-                        <li><strong>Inventor:</strong> Harlan Mills</li>
+                        <li><strong>Inventor:</strong>Harlan Mills and Niklaus Wirth</li>
                         <li><strong>Year:</strong> 1970</li>
                         <li><strong>Relevance:</strong> Top-down programming helps interviewers
                              assess structured thinking by breaking complex problems into smaller parts.</li>
 
                     </ul>
                     <aside class="notes">
-                        Invented by Harlan Mills in 1970, top-down programming 
+                        Invented by Harlan Mills and Niklaus Wirth in 1970, top-down programming 
                         breaks problems into smaller sub-problems. This method 
                         is crucial in interviews, as it highlights problem-solving 
                         and clear thinking.
@@ -560,16 +533,6 @@
                         allowing for modular and organized code.
                     </aside>
                 </section>
-                
-                <section>
-                    <h1 class="slide-title">Pair Coding & Top Down Programming Modeling</h1>
-                    <!-- Include link for prepared coding challenge using Bubble sort -->
-
-                    <aside class="notes">
-                        In this example, one partner should act as the "driver," writing the code, while the other is the "navigator," guiding them through the algorithm.
-                        Practice good communication and explain the thought process behind each step.
-                    </aside>
-                </section>
 
                 <section>
                     <h1 class="slide-title">Q&A</h1>
@@ -580,19 +543,24 @@
                 </section>
 
                 <section>
-                    <h1>Activity Options</h1>
-                    <p>Choose one of the following activities to get started:</p>
-                    <ul>
-                      <li>
-                        <h2>Activity 1: Learn Bubble Sort</h2>
-                      </li>
-                      <li>
-                        <h2>Activity 2: Learn Merge Sort</h2>
-                      </li>
-                      <li>
-                        <h2>Activity 3: Learn RSA</h2>
-                      </li>
-                    </ul>
+                    <h2>Activity Options</h2>
+                        <p>Choose one of the following activities. To get started, break into small groups of two or more:</p>
+
+                        <ul>
+                            <li><strong>Activity 1:</strong> Learn Bubble Sort – New coders working alone</li>
+                            <li><strong>Activity 2:</strong> Learn Merge Sort – Hobby coders working alone</li>
+                            <li><strong>Activity 3:</strong> Learn RSA – Professional developers</li>
+                        </ul>
+                        <aside class="notes">
+                            Please form small groups of two or more and choose an activity:
+                        
+                            - **Activity 1**: Bubble Sort – Best for new coders learning basic algorithms.
+                            - **Activity 2**: Merge Sort – Great for hobby coders wanting a challenge.
+                            - **Activity 3**: RSA – For professionals familiar with advanced concepts.
+                        
+                            Focus on collaboration, communication, and top-down programming.  
+                            Ask questions if you need help.
+                        </aside>
                 </section>
 
                 <!-- Intro to Workshop -->
@@ -608,6 +576,9 @@
                     </p>
                     <ol>
                         <li>
+                            <strong>Work in groups of 2 or more</strong>
+                        </li>
+                        <li>
                             <strong>Fork the Repository</strong>
                         </li>
                         <li>
@@ -615,9 +586,11 @@
                         </li>
                     </ol>
                     <aside class="notes">
-                        These instructions will help participants fork the activity repository into their GitHub accounts 
-                        and open it in CodeSpace for a hands-on experience.
-                    </aside>
+                        By now, you should be in groups of two or more. In this session, you’ll practice pair programming and top-down design. 
+                        Each activity is structured to help you use industry-relevant terminology and collaborate effectively, 
+                        turning abstract algorithms into clear, concrete concepts. 
+                        We’ll now open the activities in CodeSpace on your computer for a hands-on experience.
+                    </aside>                    
                 </section>
                 
 
@@ -650,12 +623,12 @@
                         In pairs, choose and code an algorithm such as Merge Sort or the RSA Algorithm.
                     </p>
                     <p>
-                        Apply what you've learned from pair coding, and top-down programming. Focus on clear communication and collaboration as you work through the coding tasks together.
+                        Apply what you've learned from Pair Programming, and top-down programming. Focus on clear communication and collaboration as you work through the coding tasks together.
                     </p>
                     <aside class="notes">
                         I want to emphasize the importance of communication during this exercise. Make sure both you and your partner understand each step and can clearly explain your thought process. The goal is not just to code, but to work effectively as a team and improve your collaboration skills.
                     </aside> 
-                    <!-- Insert pair coding, CCI approach, and top-down programming infographics for reference -->
+                    <!-- Insert Pair Programming, CCI approach, and top-down programming infographics for reference -->
                 </section>
                 
 
@@ -671,6 +644,20 @@
                                 >https://github.com/Semalab/developer-skills-matrix.git</a
                             >
                         </li>
+                        <li>
+                            Algorithms Visualization:
+                            <a
+                                href="https://visualgo.net/en/sorting"
+                                target="_blank"
+                                >https://visualgo.net/en/sorting</a
+                        </li>
+                        <li>
+                            Geek for Geeks - Algorithm & Data Structures Study Tool:
+                            <a
+                                href="https://www.geeksforgeeks.org/bubble-sort-algorithm/"
+                                target="_blank"
+                                >https://www.geeksforgeeks.org/</a
+                        </li>                       
                     </ul>
                     <aside class="notes"></aside>
                 </section>
